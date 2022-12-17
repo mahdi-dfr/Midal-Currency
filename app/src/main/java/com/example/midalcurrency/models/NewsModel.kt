@@ -26,8 +26,6 @@ data class NewsModel(
         var downvotes: String,
         @SerializedName("guid")
         var guid: String,
-       /* @SerializedName("id")
-        var id: String,*/
         @SerializedName("imageurl")
         var imageurl: String,
         @SerializedName("lang")
@@ -38,8 +36,6 @@ data class NewsModel(
         var source: String,
         @SerializedName("source_info")
         var sourceInfo: SourceInfo,
-        /*@SerializedName("tags")
-        var tags: String,*/
         @SerializedName("title")
         var title: String,
         @SerializedName("upvotes")
@@ -52,8 +48,6 @@ data class NewsModel(
             var img: String,
             @SerializedName("lang")
             var lang: String,
-           /* @SerializedName("name")
-            var name: String*/
         )
     }
 

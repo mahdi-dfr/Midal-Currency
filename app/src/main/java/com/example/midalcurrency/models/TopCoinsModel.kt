@@ -37,12 +37,6 @@ data class TopCoinsModel(
             var algorithm: String,
             @SerializedName("AssetLaunchDate")
             var assetLaunchDate: String,
-            /*@SerializedName("BlockNumber")
-            var blockNumber: Int,
-            @SerializedName("BlockReward")
-            var blockReward: Double,
-            @SerializedName("BlockTime")
-            var blockTime: Double,*/
             @SerializedName("DocumentType")
             var documentType: String,
             @SerializedName("FullName")
@@ -53,12 +47,8 @@ data class TopCoinsModel(
             var imageUrl: String,
             @SerializedName("Internal")
             var `internal`: String,
-           /* @SerializedName("MaxSupply")
-            var maxSupply: Double,*/
             @SerializedName("Name")
             var name: String,
-            /*@SerializedName("NetHashesPerSecond")
-            var netHashesPerSecond: Long,*/
             @SerializedName("ProofType")
             var proofType: String,
             @SerializedName("Rating")

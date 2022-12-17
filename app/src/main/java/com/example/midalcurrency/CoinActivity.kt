@@ -6,8 +6,6 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.midalcurrency.adapters.ChartAdapter
 import com.example.midalcurrency.api.ApiManager
@@ -173,14 +171,9 @@ class CoinActivity : AppCompatActivity() {
                     Log.i("TAG", "testApi: " + data.first[1].high)
                 }
 
-                override fun onError(errorMessage: String) {
-                    /*Toast.makeText(
-                        this@CoinActivity,
-                        "error => " + errorMessage,
-                        Toast.LENGTH_SHORT
-                    ).show()*/
+                override fun onError(error: String) {
 
-                    Log.i("TAG", "testApi: " + errorMessage)
+                    Log.i("TAG", "testApi: " + error)
                 }
             })
 
